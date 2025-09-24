@@ -2,6 +2,11 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+
+
+       
+
+
         System.out.println("Hello world!");
     }
 
@@ -9,7 +14,7 @@ public class Main {
 
         boolean sonuc=false;
 
-        if(isBarking==true && (clock>=20 && clock<=23 || clock>=0 && clock<=8 )   )  sonuc=true;
+        if(isBarking==true && (clock>=20 && clock<=23 || clock>=0 && clock<8 )   )  sonuc=true;
        return sonuc;
     }
 
@@ -35,12 +40,13 @@ public class Main {
     }
 
     public static double area(double radius) {
-        double sonuc=0;
-       sonuc= radius*radius*Math.PI;
+        double sonuc = 0;
+        sonuc = radius * radius * Math.PI;
 
-        if(sonuc<0) sonuc=-1;
+        if (sonuc < 0) sonuc = -1;
         return sonuc;
 
 
     }
+
 }
