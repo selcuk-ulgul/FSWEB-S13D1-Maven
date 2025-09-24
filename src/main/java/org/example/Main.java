@@ -54,17 +54,17 @@ public class Main {
     public static double area(double width, double height) {
        double sonuc=0;
        sonuc=width*height;
-       if(sonuc<0) sonuc=-1;
+       if(width<0 || height<0 ) sonuc=-1;
        return sonuc;
     }
 
     public static double area(double radius) {
         double sonuc = 0;
         if(radius<0)
-            return -1;
-        sonuc = radius * radius * Math.PI;
+           sonuc= -1;
+       else  sonuc = radius * radius * Math.PI;
 
-        if (sonuc < 0) sonuc = -1;
+        
         return sonuc;
 
 
